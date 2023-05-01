@@ -2,7 +2,7 @@ import { bookName, bookAuthor } from './form.js';
 
 const storedData = JSON.parse(localStorage.getItem('storedData')) || [];
 
-export function newAuthorData() {
+export const newAuthorData = () => {
   const authorData = {
     bookName: bookName.value,
     bookAuthor: bookAuthor.value,
@@ -10,13 +10,11 @@ export function newAuthorData() {
   };
   storedData.push(authorData);
   localStorage.setItem('storedData', JSON.stringify(storedData));
-}
+};
 
-export function deleteBook(bookNumber) {
+export const deleteBook = (bookNumber) => {
   const updatedData = storedData.filter((storedData) => storedData.bookNumber !== bookNumber);
   localStorage.setItem('storedData', JSON.stringify(updatedData));
-}
+};
 
-export function getStoredData() {
-  return storedData;
-}
+export const getStoredData = () => storedData;

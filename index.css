@@ -37,12 +37,20 @@ header {
   gap: 3rem;
 }
 
+.date-and-time-container {
+  display: flex;
+  position: absolute;
+  right: 1em;
+  top: 6.5em;
+}
+
 .main-container {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 0 10rem;
   gap: 1rem;
+  margin-top: 4.5rem;
 }
 
 .main-container > h1 {

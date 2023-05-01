@@ -1,6 +1,21 @@
-import { form, bookName, bookAuthor } from './modules/form.js';
+import {
+  form, bookName, bookAuthor,
+} from './modules/form.js';
 import { newAuthorData } from './modules/storage.js';
 import { showBookList } from './modules/bookList.js';
+
+import getCurrentDateTime from './modules/dateTime.js';
+
+// const getCurrentDateTime = () => {
+//   // console.log(DateTime.now());
+//   const now = DateTime.now();
+//   const formattedDate = now.toLocaleString(DateTime.DATETIME_FULL);
+//   dateAndTime.textContent = formattedDate;
+// };
+
+setInterval(getCurrentDateTime, 1000);
+
+// dateAndTime.textContent = now;
 
 // Listen for form submission
 form.addEventListener('submit', (event) => {
