@@ -63,6 +63,7 @@ footer {
   flex-direction: row;
   gap: 2em;
   justify-content: space-around;
+  padding: 1rem 2rem;
 }
 
 .book-info:nth-of-type(odd) {
@@ -75,6 +76,7 @@ footer {
   align-self: center;
   position: absolute;
   right: 14rem;
+  background-color: #fff;
 }
 
 .books,
@@ -106,8 +108,9 @@ button:hover {
 
 .contact-section {
   position: absolute;
-  top: 14rem;
-  visibility: hidden;
+  top: 12rem;
+
+  /* visibility: hidden; */
 }
 
 footer {

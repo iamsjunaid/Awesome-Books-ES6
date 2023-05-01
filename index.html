@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="index.css">
+  <link rel="shortcut icon" href="#">
   <title>Document</title>
 </head>
 
@@ -25,15 +26,15 @@
   <section class="main-container">
     <h1><u>All Awesome Books</u></h1>
     <div>
-      <div class="books"></div>
+      <div class="books" id="books-list"></div>
       <br>
       <form id="form">
         <fieldset id="fieldset-1">
           <legend>Add a new book</legend>
-          <input type="text" placeholder="Name" id="new-title">
+          <input type="text" placeholder="Name" id="bookName">
           <br>
 
-          <input type="text" placeholder="Author" id="new-author">
+          <input type="text" placeholder="Author" id="authorName">
           <br>
           <button type="submit" id="add-book" value="Add">Submit</button>
         </fieldset>
@@ -55,7 +56,8 @@
   <footer>
     <p>&copy; Copyright 2023 All rights reserved.</p>
   </footer>
-  <script src="index.js"></script>
+  <script src="index.js" type="module"></script>
+  <script src="./modules/toggle-content.js"></script>
 </body>
 
 </html>
